@@ -14,7 +14,6 @@ const createWindow = () => {
     })
 
     win.loadFile('index.html')
-    // win.loadURL('https://github.com')
 }
 
 app.whenReady().then(() => {
