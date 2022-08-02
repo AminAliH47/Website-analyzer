@@ -1,0 +1,30 @@
+::selection {
+    background-color: hsl(var(--p));
+    color: #fff;
+}
+
+body {
+    overflow-y: hidden;
+}
+
+.shape-1 {
+    position: fixed;
+    top: -20%;
+    right: -10%;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    background: hsl(var(--p));
+    z-index: 0;
+}
+
+.shape-2 {
+    position: fixed;
+    bottom: 10%;
+    left: -15%;
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    background: hsl(var(--p));
+    z-index: 0;
+}
