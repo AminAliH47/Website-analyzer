@@ -1,31 +1,71 @@
 {
-  "name": "website-analyzer-front",
-  "version": "1.0.0",
-  "description": "Website Analyzer Front-end written in Electron js",
-  "main": "main.js",
+  "name": "front-end",
+  "version": "0.1.0",
+  "private": true,
   "scripts": {
-    "test": "test",
-    "start": "electron ."
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "test:unit": "vue-cli-service test:unit",
+    "lint": "vue-cli-service lint"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/TP-Techs/Website-analyzer.git"
-  },
-  "keywords": [
-    "website-analyzer",
-    "analyzer",
-    "electron-js",
-    "front-end"
-  ],
-  "author": "TP-Techs",
-  "license": "GPL-3.0",
-  "bugs": {
-    "url": "https://github.com/TP-Techs/Website-analyzer/issues"
-  },
-  "homepage": "https://github.com/TP-Techs/Website-analyzer#readme",
-  "devDependencies": {
+  "dependencies": {
+    "core-js": "^3.8.3",
     "daisyui": "^2.20.0",
-    "electron": "^6.1.12",
+    "register-service-worker": "^1.7.2",
+    "vue": "^3.2.13",
+    "vue-router": "^4.0.3"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.12.16",
+    "@babel/eslint-parser": "^7.12.16",
+    "@vue/cli-plugin-babel": "~5.0.0",
+    "@vue/cli-plugin-eslint": "~5.0.0",
+    "@vue/cli-plugin-pwa": "~5.0.0",
+    "@vue/cli-plugin-router": "~5.0.0",
+    "@vue/cli-plugin-unit-jest": "~5.0.0",
+    "@vue/cli-service": "~5.0.0",
+    "@vue/test-utils": "^2.0.0-0",
+    "@vue/vue3-jest": "^27.0.0-alpha.1",
+    "autoprefixer": "^10.4.8",
+    "babel-jest": "^27.0.6",
+    "eslint": "^7.32.0",
+    "eslint-plugin-vue": "^8.0.3",
+    "jest": "^27.0.5",
+    "postcss": "^8.4.14",
     "tailwindcss": "^3.1.7"
+  },
+  "eslintConfig": {
+    "root": true,
+    "env": {
+      "node": true
+    },
+    "extends": [
+      "plugin:vue/vue3-essential",
+      "eslint:recommended"
+    ],
+    "parserOptions": {
+      "parser": "@babel/eslint-parser"
+    },
+    "rules": {},
+    "overrides": [
+      {
+        "files": [
+          "**/__tests__/*.{j,t}s?(x)",
+          "**/tests/unit/**/*.spec.{j,t}s?(x)"
+        ],
+        "env": {
+          "jest": true
+        }
+      }
+    ]
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead",
+    "not ie 11"
+  ],
+  "jest": {
+    "preset": "@vue/cli-plugin-unit-jest"
   }
 }

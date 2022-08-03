@@ -28,3 +28,9 @@ body {
     background: hsl(var(--p));
     z-index: 0;
 }
+
+#swap-options:toggle,
+.dropdown-content {
+    visibility: visible;
+    opacity: 1;
+}
