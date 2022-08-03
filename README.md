@@ -2,6 +2,6 @@
 
 # Website Analyzer
 
-*Website Analyzer written in FastAPI and Electron JS*
+*Website Analyzer written in FastAPI and Vue JS*
 
 </div>
