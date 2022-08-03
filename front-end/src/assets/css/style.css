@@ -34,3 +34,15 @@ body {
     visibility: visible;
     opacity: 1;
 }
+
+.dropdown:not(.dropdown-hover):focus .dropdown-content,
+.dropdown:not(.dropdown-hover):focus-within .dropdown-content {
+    visibility: hidden;
+    opacity: 0;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap');
+
+.font-lato {
+    font-family: 'Lato', sans-serif;
+}
