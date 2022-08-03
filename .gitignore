@@ -1,4 +1,22 @@
 back-end/venv/
 front-end/node_modules/
 front-end/package-lock.json
+
+# local env files
+front-end/.env
+back-end/.env
+
+# Log files
+front-end/npm-debug.log*
+front-end/yarn-debug.log*
+front-end/yarn-error.log*
+front-end/pnpm-debug.log*
+
+# Editor directories and files
 .idea/
+.vscode/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
