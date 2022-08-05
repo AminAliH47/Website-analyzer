@@ -74,14 +74,16 @@
       Website Analyzer
     </h1>
 
-    <input type="text" placeholder="exm: https://google.com/" class="input 
-        input-bordered shadow-primary shadow-sm input-primary w-3/6 xl:w-full max-w-xs input-md
+    <input type="text" placeholder="exm: https://google.com/" name="url" class="input
+        input-bordered input-primary w-3/6 xl:w-full max-w-xs input-md
         mb-4 md:mb-4 xl:mb-5">
 
     <button class="btn btn-primary text-center text-base-100">
       Analyze
     </button>
 
+    <div class="list-disc mt-4 w-3/6 xl:w-full max-w-xs">
+    </div>
   </form>
 
   <div class="fixed w-52 h-52 md:w-72 md:h-72 xl:w-80 xl:h-80 bg-primary -bottom-24 -left-20 rounded-full"></div>
@@ -114,3 +116,15 @@ export default {
 }
 
 </script>
+
+<style scoped>
+.dropdown:not(.dropdown-hover):focus .dropdown-content,
+.dropdown:not(.dropdown-hover):focus-within .dropdown-content {
+  visibility: hidden;
+  opacity: 0;
+}
+
+body {
+  overflow-y: hidden;
+}
+</style>

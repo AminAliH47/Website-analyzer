@@ -1,5 +1,6 @@
-import { createRouter, createWebHashHistory } from 'vue-router'
-import IndexPage from '../views/Index.vue'
+import { createRouter, createWebHistory } from 'vue-router'
+const IndexPage = () => import('@/views/Index.vue')
+const AnalyzePage = () => import('@/views/Analyze.vue')
 
 const routes = [
   {
@@ -7,10 +8,15 @@ const routes = [
     name: 'IndexPage',
     component: IndexPage,
   },
+  {
+    path: '/analyze',
+    name: 'AnalyzePage',
+    component: AnalyzePage,
+  },
 ]
 
 const router = createRouter({
-  history: createWebHashHistory(),
+  history: createWebHistory(),
   routes
 })
 
