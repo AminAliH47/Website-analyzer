@@ -3,6 +3,9 @@
     color: #fff;
 }
 
+body {
+    overflow-x: hidden;
+}
 
 .shape-1 {
     position: fixed;
@@ -34,4 +37,111 @@
 
 .w-11-5\/12 {
     width: 96%;
+}
+
+.w-112 {
+    width: 500px;
+}
+
+.input:focus {
+    -moz-outline-radius: var(--rounded-btn, 0.5rem);
+    -webkit-border-radius: var(--rounded-btn, 0.5rem);
+    -moz-border-radius: var(--rounded-btn, 0.5rem);
+    -khtml-border-radius: var(--rounded-btn, 0.5rem);
+    border-radius: var(--rounded-btn, 0.5rem);
+}
+
+.responsive-wrapper {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0px auto;
+}
+
+.responsive {
+    left: 0px;
+    height: 500px;
+}
+
+.responsive div {
+    background-repeat: no-repeat;
+    background-size: 100%;
+    overflow: hidden;
+}
+
+
+.responsive .phone {
+    background-image: url('../img/phone.png');
+    position: absolute;
+    width: 95px;
+    height: 205px;
+    top: 375px;
+    left: 360px;
+    z-index: 5;
+}
+
+.responsive .phone iframe {
+    width: 365px;
+    height: 645px;
+    top: 30px;
+    left: 8px;
+    overflow-y: hidden;
+}
+
+.responsive .desktop {
+    background-image: url('../img/desktop.png');
+    position: absolute;
+    width: 566px;
+    height: 538px;
+    top: 90px;
+    left: 330px;
+    z-index: 1;
+}
+
+.responsive .desktop iframe {
+    width: 2356px;
+    height: 1329px;
+    top: 30px;
+    left: 25px;
+    overflow-y: hidden;
+}
+
+.responsive .tablet {
+    background-image: url('../img/tablet.png');
+    position: absolute;
+    width: 220px;
+    /* height: 400px; */
+    top: 230px;
+    left: 175px;
+    z-index: 3;
+}
+
+.responsive .tablet iframe {
+    width: 893px;
+    height: 1189px;
+    top: 33px;
+    left: 12px;
+    overflow-y: hidden;
+}
+
+.responsive .laptop {
+    background-image: url('../img/laptop.png');
+    position: absolute;
+    width: 477px;
+    height: 307px;
+    top: 275px;
+    left: 700px;
+    z-index: 2;
+}
+
+.responsive .laptop iframe {
+    width: 1603px;
+    height: 971px;
+    top: 18px;
+    left: 63px;
+    overflow-y: hidden;
+}
+
+
+.responsive iframe {
+    z-index: 1;
 }

@@ -1,5 +1,5 @@
 <template>
-    <div class="stats stats-vertical md:stats-horizontal shadow-lg">
+    <div class="stats stats-vertical md:stats-horizontal shadow-lg border border-primary/20 z-10">
 
         <div class="stat bg-base-100 z-10">
             <div class="stat-figure">
