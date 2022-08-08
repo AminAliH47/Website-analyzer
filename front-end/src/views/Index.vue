@@ -111,14 +111,20 @@ export default {
 
 </script>
 
-<style scoped>
+<style >
 .dropdown:not(.dropdown-hover):focus .dropdown-content,
 .dropdown:not(.dropdown-hover):focus-within .dropdown-content {
   visibility: hidden;
   opacity: 0;
 }
 
-body {
-  overflow-y: hidden;
+
+input[type=text] {
+  outline: none;
+}
+
+input[type=text]:focus {
+  box-shadow: 0 0 0 2px #5C7F67;
+  outline: none;
 }
 </style>

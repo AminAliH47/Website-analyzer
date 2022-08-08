@@ -1,17 +1,17 @@
 <template>
     <div class="responsive-wrapper">
         <div class="responsive">
-            <div class="phone">
-                <div class="trim">
-                    <iframe src="https://mashadsanat.ir" frameborder="0" loading="lazy"></iframe>
-                </div>
-            </div>
             <div class="desktop">
                 <div class="trim">
                     <iframe src="https://mashadsanat.ir" frameborder="0" loading="lazy"></iframe>
                 </div>
             </div>
             <div class="laptop">
+                <div class="trim">
+                    <iframe src="https://mashadsanat.ir" frameborder="0" loading="lazy"></iframe>
+                </div>
+            </div>
+            <div class="phone">
                 <div class="trim">
                     <iframe src="https://mashadsanat.ir" frameborder="0" loading="lazy"></iframe>
                 </div>

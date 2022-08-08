@@ -24,18 +24,24 @@
                 </Card>
             </div>
         </div>
-        <div class="grid grid-cols-1 xl:grid-cols-2 gap-4 mt-6 lg:mt-10">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-4 mt-6 lg:mt-10">
             <div class="row-span-1">
-                <Card title="Your Ip Location" desc="Iran - Tehran">
+                <Card title="Your Website IP Location" desc="Iran - Tehran">
                     <template v-slot:chart>
                         <WorldMap id="world-map" />
                     </template>
                 </Card>
             </div>
+            <div class="row-span-1">
+                <Card title="About your website"
+                    desc="In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. Lorem ipsum may b">
+                </Card>
+            </div>
         </div>
+
         <div class="grid grid-cols-1 gap-4 mt-6 lg:mt-10">
             <div class="row-span-1">
-                <Card title="Is Your Website Responsive?" desc="">
+                <Card title="Is Your Website Responsive?" desc="" id="responsive">
                     <template v-slot:chart>
                         <Responsive />
                     </template>
@@ -68,3 +74,10 @@ export default {
     },
 }
 </script>
+
+<style>
+body {
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+</style>
