@@ -3,9 +3,11 @@
     color: #fff;
 }
 
-body {
-    overflow-x: hidden;
+html {
+    scroll-behavior: smooth;
 }
+
+
 
 .shape-1 {
     position: fixed;
@@ -59,7 +61,11 @@ body {
 
 .responsive {
     left: 0px;
-    height: 500px;
+    height: max-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .responsive div {
@@ -71,11 +77,11 @@ body {
 
 .responsive .phone {
     background-image: url('../img/phone.png');
-    position: absolute;
+    position: relative;
     width: 95px;
-    height: 205px;
-    top: 375px;
-    left: 360px;
+    height: 245px;
+    top: 0;
+    left: 0;
     z-index: 5;
 }
 
@@ -89,29 +95,29 @@ body {
 
 .responsive .desktop {
     background-image: url('../img/desktop.png');
-    position: absolute;
-    width: 566px;
-    height: 538px;
-    top: 90px;
-    left: 330px;
+    position: relative;
+    width: 290px;
+    height: 290px;
+    top: 0;
+    left: 0;
     z-index: 1;
 }
 
 .responsive .desktop iframe {
-    width: 2356px;
-    height: 1329px;
-    top: 30px;
-    left: 25px;
+    width: 1206px;
+    height: 689px;
+    top: 13px;
+    left: 13px;
     overflow-y: hidden;
 }
 
 .responsive .tablet {
     background-image: url('../img/tablet.png');
-    position: absolute;
+    position: relative;
     width: 220px;
-    /* height: 400px; */
-    top: 230px;
-    left: 175px;
+    height: 400px;
+    top: 0;
+    left: 0;
     z-index: 3;
 }
 
@@ -125,23 +131,198 @@ body {
 
 .responsive .laptop {
     background-image: url('../img/laptop.png');
-    position: absolute;
-    width: 477px;
-    height: 307px;
-    top: 275px;
-    left: 700px;
+    position: relative;
+    width: 300px;
+    height: 210px;
+    top: 0;
+    left: 0;
     z-index: 2;
 }
 
 .responsive .laptop iframe {
-    width: 1603px;
-    height: 971px;
-    top: 18px;
-    left: 63px;
+    width: 1002px;
+    height: 605px;
+    top: 11px;
+    left: 40px;
     overflow-y: hidden;
 }
 
 
 .responsive iframe {
     z-index: 1;
+}
+
+/* MD */
+@media (min-width: 768px) {
+    .responsive-wrapper {
+        max-width: 700px;
+    }
+
+    .responsive {
+        height: 1000px;
+    }
+
+    .responsive .phone {
+        position: relative;
+        width: 95px;
+        height: 200px;
+        top: 105px;
+        left: -10%;
+        z-index: 5;
+    }
+
+    .responsive .phone iframe {
+        width: 365px;
+        height: 645px;
+        top: 30px;
+        left: 8px;
+        overflow-y: hidden;
+    }
+
+    .responsive .desktop {
+        position: relative;
+        width: 566px;
+        height: 538px;
+        top: -160px;
+        left: 0;
+        z-index: 1;
+    }
+
+    .responsive .desktop iframe {
+        width: 2356px;
+        height: 1329px;
+        top: 30px;
+        left: 25px;
+        overflow-y: hidden;
+    }
+
+    .responsive .tablet {
+        position: absolute;
+        width: 220px;
+        height: 400px;
+        top: 700px;
+        left: 41%;
+        z-index: 3;
+    }
+
+    .responsive .tablet iframe {
+        width: 893px;
+        height: 1189px;
+        top: 33px;
+        left: 12px;
+        overflow-y: hidden;
+    }
+
+    .responsive .laptop {
+        position: absolute;
+        width: 477px;
+        height: 307px;
+        top: 370px;
+        left: 32%;
+        z-index: 2;
+    }
+
+    .responsive .laptop iframe {
+        width: 1603px;
+        height: 971px;
+        top: 18px;
+        left: 63px;
+        overflow-y: hidden;
+    }
+}
+
+/* LG */
+/* @media (min-width: 1024px) {} */
+
+/* XL */
+@media (min-width: 1280px) {
+    .responsive-wrapper {
+        width: 90%;
+        max-width: 1200px;
+        margin: 0px auto;
+    }
+
+    .responsive {
+        left: 0px;
+        height: 500px;
+    }
+
+    .responsive div {
+        background-repeat: no-repeat;
+        background-size: 100%;
+        overflow: hidden;
+    }
+
+
+    .responsive .phone {
+        background-image: url('../img/phone.png');
+        position: absolute;
+        width: 95px;
+        height: 205px;
+        top: 375px;
+        left: 360px;
+        z-index: 5;
+    }
+
+    .responsive .phone iframe {
+        width: 365px;
+        height: 645px;
+        top: 30px;
+        left: 8px;
+        overflow-y: hidden;
+    }
+
+    .responsive .desktop {
+        background-image: url('../img/desktop.png');
+        position: absolute;
+        width: 566px;
+        height: 538px;
+        top: 90px;
+        left: 330px;
+        z-index: 1;
+    }
+
+    .responsive .desktop iframe {
+        width: 2356px;
+        height: 1329px;
+        top: 30px;
+        left: 25px;
+        overflow-y: hidden;
+    }
+
+    .responsive .tablet {
+        background-image: url('../img/tablet.png');
+        position: absolute;
+        width: 220px;
+        /* height: 400px; */
+        top: 230px;
+        left: 175px;
+        z-index: 3;
+    }
+
+    .responsive .tablet iframe {
+        width: 893px;
+        height: 1189px;
+        top: 33px;
+        left: 12px;
+        overflow-y: hidden;
+    }
+
+    .responsive .laptop {
+        background-image: url('../img/laptop.png');
+        position: absolute;
+        width: 477px;
+        height: 307px;
+        top: 275px;
+        left: 700px;
+        z-index: 2;
+    }
+
+    .responsive .laptop iframe {
+        width: 1603px;
+        height: 971px;
+        top: 18px;
+        left: 63px;
+        overflow-y: hidden;
+    }
 }

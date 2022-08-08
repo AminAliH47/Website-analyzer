@@ -2,12 +2,15 @@
   "name": "front-end",
   "version": "0.1.0",
   "private": true,
+  "description": "",
+  "author": "",
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "test:unit": "vue-cli-service test:unit",
     "lint": "vue-cli-service lint"
   },
+  "main": "babel.config.js",
   "dependencies": {
     "@heroicons/vue": "^1.0.6",
     "chart.js": "^3.9.1",
@@ -72,12 +75,9 @@
   "jest": {
     "preset": "@vue/cli-plugin-unit-jest"
   },
-  "main": "babel.config.js",
   "directories": {
     "test": "tests"
   },
   "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "description": ""
+  "license": "ISC"
 }

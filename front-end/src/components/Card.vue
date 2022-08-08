@@ -1,5 +1,5 @@
 <template>
-    <div class="card w-full bg-base-100 shadow-xl  border border-primary/20">
+    <div class="card w-full bg-base-100 shadow-xl  border border-primary/20" :id="this.id">
         <div class="card-body items-start text-left">
             <h2 class="card-title">{{ title }}</h2>
             <p>{{ desc }}</p>
@@ -26,6 +26,9 @@ export default {
         desc: {
             type: String,
             default: "This is Analyze",
+        },
+        id: {
+            type: String,
         }
     }
 }

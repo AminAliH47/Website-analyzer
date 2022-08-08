@@ -3,7 +3,7 @@
 
         <div class="stat bg-base-100 z-10">
             <div class="stat-figure">
-                <a href="#" class="btn btn-ghost text-primary">
+                <a href="#" class="btn btn-ghost text-primary" @click="isTrue = !isTrue">
                     <LightningBoltIcon class="h-10 w-10 text-success" />
                 </a>
             </div>
@@ -16,7 +16,7 @@
             </div>
 
             <div class="stat-desc">
-                <a href="#" class="btn btn-link text-success gap-2 normal-case p-0">
+                <a href="#" class="btn btn-link text-success font-bold gap-2 normal-case p-0">
                     Read more
                     <ChevronDoubleDownIcon class="h-5 w-5" />
                 </a>
@@ -78,20 +78,17 @@
 
         <div class="stat bg-base-100 z-10">
             <div class="stat-figure">
-                <a href="#" class="btn btn-ghost text-primary">
-                    <LightningBoltIcon class="h-10 w-10 text-success" />
+                <a href="#responsive" class="btn btn-ghost text-primary">
+                    <DeviceMobileIcon class="h-10 w-10 text-primary" />
                 </a>
             </div>
-            <div class="stat-title">GTmetrix Status</div>
-            <div class="text-primary h-28">
-                <div class="radial-progress bg-white text-success 
-                my-3 border-4 border-white" style="--value:70; ----thickness: 15px;">
-                    86%
-                </div>
+            <div class="stat-title">Responsive</div>
+            <div class="text-primary h-28 flex items-center justify-start">
+                <h2 class="text-xl font-black"> Is your Website Responsive? </h2>
             </div>
 
             <div class="stat-desc">
-                <a href="#" class="btn btn-link text-success gap-2 normal-case p-0">
+                <a href="#responsive" class="btn btn-link text-primary font-bold gap-2 normal-case p-0">
                     Read more
                     <ChevronDoubleDownIcon class="h-5 w-5" />
                 </a>
@@ -102,7 +99,7 @@
 </template>
 
 <script>
-import { ChevronDoubleDownIcon, EyeIcon, LightningBoltIcon } from '@heroicons/vue/outline'
+import { ChevronDoubleDownIcon, EyeIcon, LightningBoltIcon, DeviceMobileIcon } from '@heroicons/vue/outline'
 
 export default {
     name: "StatusComponent",
@@ -110,6 +107,7 @@ export default {
         ChevronDoubleDownIcon,
         EyeIcon,
         LightningBoltIcon,
+        DeviceMobileIcon,
     }
 }
 </script>
